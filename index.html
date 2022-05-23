@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="ico/katherine.png">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>Katherine💖</title>
+</head>
+<body>
+	<section>
+		<div>
+			<br><br><br>
+			<br><br><br>
+			<h2>
+				Si pensarlo ni imaginarlo llegaste a convertirte una parte fundamental de mi...
+			</h2>
+			<h2>
+				🙈 antes de irte a dormir solo quería hacerte recordar los mucho que te quiero
+			</h2>	
+			<h2>
+				quizás ya lo sabes, pero siempre es bueno recalcarlo xd </h3>
+			</h2>
+			<br>	
+		</div>
+		<div>
+			<br>
+			<audio controls id="bgAudio" style="margin: 0 auto; display: block;">
+				<source src="mp3/katherineYAntony.mp3" >
+			</audio>
+			<script>
+				var audio = document.getElementById("bgAudio");
+				audio.volume = 0.2;
+			</script>
+		</div>
+		<br><br><br>
+		<div>
+			<button class="Click-here">Dale clic aquí ✅</button>
+			<div class="custom-model-main">
+				<div class="custom-model-inner">
+				   <div class="close-btn">×</div>
+				   <div class="custom-model-wrap">
+					  <div class="pop-up-content-wrap">
+						 <p>¿Te soy sincero 🙄? Soy tu admirador n-n, así que gracias por tu tiempo en leer esto.</p>
+						 <h3>Que tengas un buen inicio de semana 🤗🤞</h3>
+					  </div>
+				   </div>
+				</div>
+				<div class="bg-overlay"></div>
+			 </div>
+			 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+			 <script>
+			 $(".Click-here").on('click', function() {
+			   $(".custom-model-main").addClass('model-open');
+			 }); 
+			 $(".close-btn, .bg-overlay").click(function(){
+			   $(".custom-model-main").removeClass('model-open');
+			 });
+			 </script>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function createBubble(){
+			const section = document.querySelector("section")
+			const createElement = document.createElement("span")
+			var size = Math.random() * 60;
+			createElement.style.width = 20 + size + 'px';
+			createElement.style.height = 20 + size + 'px';	
+			createElement.style.left = Math.random()* innerWidth + 'px';
+			section.appendChild(createElement);
+			setTimeout(() => {
+				createElement.remove()
+			},4000)	 
+		}
+        setInterval(createBubble,50)
+	</script>
+</body>
+</html>
